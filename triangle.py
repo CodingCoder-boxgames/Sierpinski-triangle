@@ -8,11 +8,11 @@ class Triangle():
 	def __init__(self):
 		self.font = pygame.font.Font('ARCADEPI.TTF', 20)
 		self.display_screen = pygame.display.get_surface()
-		self.cord_A = 0,HEIGTH
-		self.cord_B = WIDTH/2*0 ,0
-		self.cord_C = WIDTH,HEIGTH
+		self.cord_A = 0,HEIGTH - 2
+		self.cord_B = WIDTH-200 ,0
+		self.cord_C = WIDTH,HEIGTH - 2
 		self.triangle_points = [self.cord_A,self.cord_B,self.cord_C]
-		self.list_x, self.list_y = [200], [180] # x and y of the last dot 
+		self.list_x, self.list_y = [200], [300] # x and y of the last dot 
 		self.rectangle_list = []
 		self.drew_first_point = False
 		self.count = 1 # the total point in the triangle in total
